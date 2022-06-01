@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+ /* https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_sidenav   */
+ body{
+    margin: 0;
+    background-color: white !important;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* https://codepen.io/DraganaB/pen/xMOjgZ */
+html{
+	scroll-behavior: smooth;
+    background-color: white;
+}
+
+ .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: deepskyblue;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+    /* font-family: "Lato", sans-serif; */
+    text-align: center;
+
+
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 3%;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+  .navButton .right { 
+    right: 3%;
+    top: 1%;
+    position: absolute;
+    color:deepskyblue;
+    font-size: xx-large;
+}
+
+/*@media only screen and (min-width: 801px) {*/
+    /* For desktop: */
+/*     span{*/
+/*         display:none;*/
+/*     }*/
+   
+/*  }*/
+
+  section
+  {
+      /* position: absolute; */
+      width: 100%;
+      /* height: 100%; */
+      /* background: #fff; */
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      /* https://stackoverflow.com/questions/24246914/website-wont-scroll-down */
+      overflow: hidden;
+      /* https://www.tomred.net/css-html-js/disable-or-enable-horizontal-or-vertical-scrollbar.html#:~:text=To%20disable%20the%20horizontal%20scrollbar,expands%20to%20exceed%20the%20space. */
+      overflow-x: hidden;
+      /* top: 0px; */
+  }
+  
+  .header
+  {
+      /* position: fixed; */
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 80px;
+      /* padding: 0 10%; */
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-sizing: border-box;
+      display:row;
+      /* font-family: "Lato", sans-serif; */
+      background:white;
+
+  }
+  .header .logo
+  {
+      /* opacity: 0; */
+      margin: 0;
+      padding: 0;
+      font-size: 2em;
+      /* text-transform: uppercase; */
+      color: deepskyblue;
+  
+  }
+  .header ul
+  {
+      margin: 0;
+      padding: 0;
+      z-index: 100;
+      display: flex;
+  }
+  .header ul li
+  {
+      /* opacity: 0; */
+      list-style: none;
+      margin: 0 10px;
+      animation: fadeInRight 0.5s linear forwards;
+  }
+  .header ul li:last-child
+  {
+      margin-right: 0;
+  }
+  .header ul li a
+  {
+      text-decoration: none;
+      /* font-size: 1.2em; */
+      font-size: 20px;
+      font-weight: 600;
+      color: black;
+      padding: 15px 10px;
+      letter-spacing: 2px;
+  }
+  .header ul li a.active,
+  .header ul li a:hover
+  {
+      background: deepskyblue;
+      color: #fff;
+  }
+
+
+  @media only screen and (max-width: 800px) {
+    /* For desktop: */
+     section{
+        display:none;
+         /* display:none; This was changed so I can see the Sandbox and Live Parts of the Nav/Menu */ 
+     }
+   
+  }
+
+  @media only screen and (max-width: 800px) {
+    /* For mobile: */
+     .logoMobile{
+         top:5px;
+         left: 5px;
+         position: absolute;
+         padding: 10px;
+         font-size: 1.5em;
+         text-decoration: none;
+         color:black;
+         /* font-family: "Lato", sans-serif; */
+         font-weight: bold;
+         color:deepskyblue;
+
+     }
+   
+  }
+
+  @media only screen and (min-width: 800px) {
+    /* For desktop: */
+     .logoMobile{
+        display: none;
+
+     }
+   
+  }
+ 
+
+
+  /* https://codepen.io/lauraeddy/pen/KXEwOW?editors=1100 */
+  .button{
+    display: inline-block;
+    color: #fff;
+    font-family: helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+    background-color: #000;
+    border: 0;
+    padding: 20px 20px;
+    line-height: 0.428571;
+    background-color: white;
+    color:deepskyblue;
+    border:2px solid deepskyblue;
+
+  }
+
+  .button2{
+    display: inline-block;
+    color: #fff;
+    font-family: helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+    background-color: deepskyblue;
+    border: 0;
+    padding: 20px 20px;
+    line-height: 0.428571;
+    border:2px solid deepskyblue;
+
+
+  } 
+
+/* https://codepen.io/sitanotern1337/pen/MPVbeL
+I had to modify the code a bit. It's similar to the code shown in this video
+https://www.youtube.com/watch?v=V9CY0F4Wc7M (The "scroll" event in JavaScript | window.onscroll) */
+.hide {
+    display: none;
+  }
+  
+  
+
+  /* https://stackoverflow.com/questions/1144805/scroll-to-the-top-of-the-page-using-javascript?noredirect=1&lq=1   */
+#top-page {
+    width: 50px;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    cursor: pointer;
+    color: white;
+    display: none;
+  }
+
+
+
+

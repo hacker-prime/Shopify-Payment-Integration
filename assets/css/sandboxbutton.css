@@ -1,0 +1,46 @@
+.ios-switch {
+    /* display: flex;
+    align-items: center; */
+    text-align: center;
+    margin: 10px 0;
+}
+.ios-switch input[type=checkbox] {
+    display: none;
+}
+.ios-switch label {
+    display: inline-flex;
+    font-weight: bold;
+    margin-left: 20px;
+    font-family: sans-serif;
+    font-size: 28px;
+}
+.ios-switch .switch-body {
+    border: solid 1px grey;
+    border-radius: 999px;
+    display: inline-flex;
+    justify-content: flex-start;
+    cursor: pointer;
+    width: 96px;
+    background-color: #ddd;
+    box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+.ios-switch .switch-body .toggle {
+    border-radius: 50%;
+    border: solid 1px grey;
+    width: 48px;
+    height: 48px;
+    background-color: white;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
+    box-sizing: border-box;
+    transition: transform 0.4s ease;
+}
+.ios-switch.active .switch-body {
+    background-color: #51d88a;
+}
+.ios-switch.active .switch-body .toggle {
+    transform: translateX(100%);
+}
+footer hr {
+    margin: 80px 0 30px 0;
+}

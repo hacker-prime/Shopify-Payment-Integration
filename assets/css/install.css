@@ -1,0 +1,140 @@
+/* https://stackoverflow.com/questions/54151849/font-family-poppins-not-working-properly-on-my-website-when-it-loads */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* https://stackoverflow.com/questions/22658141/css-center-form-in-page-horizontally-and-vertically/22658297 */
+body, html {   
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display:table;
+}
+body {
+    display:table-cell;
+    vertical-align:middle;
+}
+form {
+    /* display:table;/* shrinks to fit content */
+    /* margin:auto; */
+}
+
+input[type=text] {
+    display:block;
+    text-align: center;
+    padding:5px; 
+    /*https://stackoverflow.com/questions/9226151/margin-left-auto-and-margin-right-auto-not-working-on-input*/
+    margin: 0 auto;
+    border:2px solid black;
+}
+
+/* If the browser window is 600px or smaller */
+
+@media(max-width:600px){
+
+    input[type=text] {
+        width: 200px;
+     }
+     
+}
+
+
+
+input[type=submit] {
+    text-align: center;
+    width: 200px;
+    height: 45px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    border: none;
+    align-items: center;
+    color: #ffffff;
+    background-color: #407BFF;
+    margin-top: 10px;
+    box-shadow: 2px 2px 30px rgb(0 0 0 / 20%);
+    text-decoration: none;
+    /* https://stackoverflow.com/questions/15300234/how-can-i-horizontally-center-a-button-element-in-a-div-element/15300266 */
+    margin:0 auto;
+    display:block;
+}
+
+input[type=submit]:hover {
+    background-color: white;
+    transition: all ease 0.3s;
+    color:#407BFF;
+    cursor:pointer;    
+}
+
+#input_submit{
+    text-align:center;
+    padding:5px; 
+    
+    /* https://stackoverflow.com/questions/43847658/how-to-center-input-horizontally-in-a-div */
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+/* Auto Typing CSS */
+
+.text {
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 2rem;
+    line-height: 30px;
+    padding-bottom: 15px;
+}
+
+.text strong span{
+    color: black;
+}
+
+.text strong a{
+    color: #407BFF;
+}
+
+@media(max-width:780px){
+    .text strong{
+        font-size: 2rem;
+        line-height: 40px;
+        padding: 0px 10px;
+    }
+    .text p{
+        font-size: 1rem;
+    }
+    .btn2{
+        width:180px;
+        height: 44px;
+    }
+}
+@media(max-width:520px){
+    .text strong{
+        font-size: 1.6rem;
+        line-height: 30px;
+    }
+    .text p{
+        /* width:90%; */
+    }
+    .btn2{
+        margin-top: 20px;
+        font-size: 0.9rem;
+    }
+}
+@media(max-width:400px){
+    .text strong{
+        font-size: 1.3rem;
+        line-height: 30px;
+    }
+}
+
+/* Auto Typing CSS */

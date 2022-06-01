@@ -1,0 +1,131 @@
+/* Sandbox Form */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+
+.body-substitute{
+    font-family: 'Poppins', sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	/* min-height: 100vh; */
+	height:85vh;
+	margin: 0;
+}
+
+.sandbox__container {
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+	overflow: hidden;
+	width: 400px;
+	max-width: 100%;
+}
+
+/* If the browser window is 600px or smaller */
+
+@media only screen and (max-width: 600px) {
+  .sandbox__container {
+	width: 275px;
+  }
+}
+
+.sandbox__header {
+	border-bottom: 1px solid #f0f0f0;
+	background-color: #f7f7f7;
+	padding: 20px 40px;
+    text-align: center;
+    background-color: #407BFF;
+}
+
+.sandbox__header h2 {
+	margin: 0;
+    color:white;
+	font-size: 25px;
+    font-weight: 500;
+}
+
+.sandbox__form {
+	padding: 30px 40px;	
+}
+
+.sandbox__form-control {
+	margin-bottom: 10px;
+	padding-bottom: 20px;
+	position: relative;
+}
+
+.sandbox__form-control label {
+	display: inline-block;
+	margin-bottom: 5px;
+}
+
+.sandbox__form-control input {
+	border: 2px solid #f0f0f0;
+	border-radius: 4px;
+	display: block;
+	font-family: inherit;
+	font-size: 14px;
+	padding: 10px;
+	width: 100%;
+}
+
+.sandbox__form-control input:focus {
+	outline: 0;
+	border-color: #777;
+}
+
+.sandbox__form-control.success input {
+	border-color: #2ecc71;
+}
+
+.sandbox__form-control.error input {
+	border-color: #e74c3c;
+}
+
+.sandbox__form-control i {
+	visibility: hidden;
+	position: absolute;
+	top: 40px;
+	right: 10px;
+}
+
+.sandbox__form-control.success i.fa-check-circle {
+	color: #2ecc71;
+	visibility: visible;
+}
+
+.sandbox__form-control.error i.fa-exclamation-circle {
+	color: #e74c3c;
+	visibility: visible;
+}
+
+.sandbox__form-control small {
+	color: #e74c3c;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	visibility: hidden;
+}
+
+.sandbox__form-control.error small {
+	visibility: visible;
+}
+
+.sandbox__form button {
+    background-color: #407BFF;
+    border: 2px solid #407BFF;
+	border-radius: 4px;
+    font-weight: 500;
+	color: #fff;
+	display: block;
+	font-family: inherit;
+	font-size: 16px;
+	padding: 10px;
+	margin-top: 20px;
+	width: 100%;
+}
+
+
+
+
+/* Sandbox Form */

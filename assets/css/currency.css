@@ -1,0 +1,118 @@
+
+
+.body-substitute-currency-structure{
+
+    display: grid;
+    /* height: 100%; */
+    height: 73.5vh;
+    place-items: center;
+    font-family: 'Poppins', sans-serif;
+  }
+
+
+.wrapper_currency{
+    width: 350px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 5px 5px 30px rgba(0,0,0,0.2);
+  }
+  .wrapper_currency .title{
+    color: #fff;
+    line-height: 65px;
+    text-align: center;
+    background: #407BFF;
+    font-size: 25px;
+    font-weight: 500;
+    border-radius: 10px 10px 0 0;
+  }
+  .wrapper_currency .box{
+    padding: 20px 30px;
+    background: #fff;
+    border-radius: 10px;
+  }
+  .wrapper_currency .box label{
+    display: flex;
+    height: 53px;
+    width: 100%;
+    align-items: center;
+    border: 1px solid lightgrey;
+    border-radius: 50px;
+    margin: 10px 0;
+    padding-left: 20px;
+    cursor: default;
+    transition: all 0.3s ease;
+  }
+
+  /* Page 22 - WiPay API  */
+
+  #option-USD:checked ~ .option-USD,
+  #option-TTD:checked ~ .option-TTD,
+  #option-JMD:checked ~ .option-JMD,
+  #option-4:checked ~ .option-4{
+    background: #407BFF;
+    border-color: #407BFF;
+  }
+  .wrapper_currency .box label .dot{
+    height: 20px;
+    width: 20px;
+    background: #d9d9d9;
+    border-radius: 50%;
+    position: relative;
+    transition: all 0.3s ease;
+  }
+  #option-USD:checked ~ .option-USD .dot,
+  #option-TTD:checked ~ .option-TTD .dot,
+  #option-JMD:checked ~ .option-JMD .dot,
+  #option-4:checked ~ .option-4 .dot{
+    background: #fff;
+  }
+  .box label .dot::before{
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(2);
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+  }
+  #option-USD:checked ~ .option-USD .dot::before,
+  #option-TTD:checked ~ .option-TTD .dot::before,
+  #option-JMD:checked ~ .option-JMD .dot::before,
+  #option-4:checked ~ .option-4 .dot::before{
+    background: #407BFF;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  .wrapper_currency .box label .text{
+    color: #407BFF;
+    font-size: 18px;
+    font-weight: 400;
+    padding-left: 10px;
+    transition: color 0.3s ease;
+  }
+  #option-USD:checked ~ .option-USD .text,
+  #option-TTD:checked ~ .option-TTD .text,
+  #option-JMD:checked ~ .option-JMD .text,
+  #option-4:checked ~ .option-4 .text{
+    color: #fff;
+  }
+  .wrapper_currency .box input[type="radio"]{
+    display: none;
+  }
+
+
+  .currencyBtn{
+    background-color: #407BFF;
+    border: 2px solid #407BFF;
+    border-radius: 4px;
+    font-weight: 500;
+    color: #fff;
+    display: block;
+    font-family: inherit;
+    font-size: 16px;
+    padding: 10px;
+    margin-top: 20px;
+    width: 100%;
+    margin-left: 10px;
+  }

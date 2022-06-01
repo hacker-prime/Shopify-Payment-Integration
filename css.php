@@ -1,0 +1,14 @@
+<link rel="stylesheet" href="assets/css/index.css">
+<link rel="stylesheet" href="../assets/css/index.css">
+<link rel="stylesheet" href="../assets/css/sandbox.css">
+<link rel="stylesheet" href="../assets/css/live.css">
+<link rel="stylesheet" href="../assets/css/feestructure.css">
+<link rel="stylesheet" href="../assets/css/currency.css">
+<link rel="stylesheet" href="assets/css/sandboxbutton.css">
+<link rel="stylesheet" href="../assets/css/sandboxbutton.css">
+<link rel="stylesheet" href="assets/css/sandbox.css">
+<link rel="stylesheet" href="assets/css/sandboxbutton.css">
+<link rel="stylesheet" href="assets/css/install.css">
+<!-- https://www.freecodecamp.org/news/how-to-use-font-awesome-v5-7-2-with-html/ -->
+<link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css"></head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
